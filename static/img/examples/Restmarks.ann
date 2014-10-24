@@ -1,0 +1,120 @@
+T1	Actor 2 6	user
+T2	Action 23 29	create
+T4	Actor 87 91	user
+T3	Object 37 44	account
+T5	Property 32 36	user
+R3	ActsOn Arg1:T2 Arg2:T3	
+T6	Property 60 68	username
+R4	HasProperty Arg1:T3 Arg2:T6	
+T7	Property 75 83	password
+R5	HasProperty Arg1:T3 Arg2:T7	
+T8	Action 108 113	login
+T9	Object 121 128	account
+T10	Property 146 154	username
+T11	Property 159 167	password
+R7	ActsOn Arg1:T8 Arg2:T9	
+R8	HasProperty Arg1:T9 Arg2:T10	
+R9	HasProperty Arg1:T9 Arg2:T11	
+T12	Actor 171 175	user
+T13	Property 184 208	logged in to his account
+T14	Action 225 231	update
+T15	Object 236 244	password
+R11	IsActorOf Arg1:T12 Arg2:T14	
+R12	ActsOn Arg1:T14 Arg2:T15	
+T16	Actor 258 262	user
+T17	Property 248 257	logged in
+T18	Action 279 282	add
+R14	IsActorOf Arg1:T16 Arg2:T18	
+T19	Object 289 297	bookmark
+T20	Object 305 312	account
+R15	ActsOn Arg1:T18 Arg2:T19	
+T21	Actor 326 330	user
+T22	Property 316 325	logged in
+T23	Action 347 355	retrieve
+T24	Object 360 368	bookmark
+T25	Object 378 385	account
+R17	IsActorOf Arg1:T21 Arg2:T23	
+R18	ActsOn Arg1:T23 Arg2:T24	
+T26	Actor 399 403	user
+T27	Property 389 398	logged in
+T28	Action 420 426	delete
+T29	Object 431 439	bookmark
+T30	Object 449 456	account
+T31	Property 460 469	logged in
+T32	Actor 470 474	user
+T33	Action 491 497	update
+R21	IsActorOf Arg1:T32 Arg2:T33	
+T34	Object 502 510	bookmark
+T35	Object 520 527	account
+R22	ActsOn Arg1:T33 Arg2:T34	
+T36	Actor 541 545	user
+T37	Property 531 540	logged in
+T38	Action 562 566	mark
+T39	Object 571 580	bookmarks
+T40	Property 584 590	public
+T41	Property 594 601	private
+R26	ActsOn Arg1:T38 Arg2:T39	
+R27	IsActorOf Arg1:T36 Arg2:T38	
+T42	Actor 615 619	user
+T43	Property 605 614	logged in
+T44	Action 636 639	add
+T45	Object 640 644	tags
+T46	Object 652 661	bookmarks
+R29	IsActorOf Arg1:T42 Arg2:T44	
+R30	ActsOn Arg1:T44 Arg2:T45	
+T47	Actor 667 671	user
+T48	Action 688 696	retrieve
+T49	Object 708 717	bookmarks
+T50	Property 701 707	public
+T51	Actor 747 751	user
+T52	Property 725 734	RESTMARKS
+T53	Actor 757 761	user
+T54	Action 778 784	search
+T55	Object 803 812	bookmarks
+T56	Property 788 791	tag
+T57	Property 796 802	public
+R34	HasProperty Arg1:T55 Arg2:T56	
+T58	Actor 839 843	user
+T59	Property 827 836	RESTMARKS
+T60	Actor 849 853	user
+T61	Action 870 876	search
+T62	Object 895 904	bookmarks
+T63	Property 888 894	public
+T64	Property 880 883	tag
+R36	HasProperty Arg1:T62 Arg2:T64	
+T65	Actor 922 927	users
+T66	Property 912 921	RESTMARKS
+T67	Actor 941 945	user
+T68	Property 931 940	logged in
+T69	Action 963 969	search
+T70	Property 973 976	tag
+T71	Object 989 998	bookmarks
+T72	Property 981 988	private
+R41	HasProperty Arg1:T71 Arg2:T70	
+R42	ActsOn Arg1:T69 Arg2:T71	
+R43	IsActorOf Arg1:T67 Arg2:T69	
+R44	IsActorOf Arg1:T47 Arg2:T48	
+R45	IsActorOf Arg1:T53 Arg2:T54	
+R46	IsActorOf Arg1:T60 Arg2:T61	
+T73	Action 132 141	providing
+R47	IsActorOf Arg1:T4 Arg2:T73	
+R2	HasProperty Arg1:T3 Arg2:T5	
+R10	HasProperty Arg1:T12 Arg2:T13	
+R13	HasProperty Arg1:T16 Arg2:T17	
+R16	HasProperty Arg1:T21 Arg2:T22	
+R19	HasProperty Arg1:T26 Arg2:T27	
+R20	HasProperty Arg1:T32 Arg2:T31	
+R23	HasProperty Arg1:T36 Arg2:T37	
+R28	HasProperty Arg1:T42 Arg2:T43	
+R31	HasProperty Arg1:T49 Arg2:T50	
+R32	HasProperty Arg1:T51 Arg2:T52	
+R33	HasProperty Arg1:T55 Arg2:T57	
+R35	HasProperty Arg1:T58 Arg2:T59	
+R37	HasProperty Arg1:T62 Arg2:T63	
+R38	HasProperty Arg1:T65 Arg2:T66	
+R40	HasProperty Arg1:T71 Arg2:T72	
+R39	HasProperty Arg1:T67 Arg2:T68	
+R24	HasProperty Arg1:T39 Arg2:T40	
+R25	HasProperty Arg1:T39 Arg2:T41	
+R48	IsActorOf Arg1:T4 Arg2:T8	
+R6	IsActorOf Arg1:T1 Arg2:T2	

@@ -1,0 +1,97 @@
+T1	Action 25 31	create
+T2	Actor 4 8	user
+R1	IsActorOf Arg1:T2 Arg2:T1
+T3	Action 128 134	import
+T4	Actor 107 111	user
+R2	IsActorOf Arg1:T4 Arg2:T3
+T5	Action 241 247	create
+T6	Object 254 260	folder
+R3	ActsOn Arg1:T5 Arg2:T6
+T7	Actor 220 224	user
+R4	IsActorOf Arg1:T7 Arg2:T5
+T8	Action 309 315	delete
+T9	Actor 288 292	user
+R5	IsActorOf Arg1:T9 Arg2:T8
+T10	Object 320 326	folder
+R6	ActsOn Arg1:T8 Arg2:T10
+T11	Action 386 394	annotate
+T12	Actor 365 369	user
+R7	IsActorOf Arg1:T12 Arg2:T11
+T13	Object 414 419	terms
+T14	Action 459 465	create
+T15	Actor 438 442	user
+R8	IsActorOf Arg1:T15 Arg2:T14
+T16	Action 536 542	delete
+T17	Actor 515 519	user
+R9	IsActorOf Arg1:T17 Arg2:T16
+T18	Object 569 580	annotations
+T19	Action 607 613	modify
+T20	Actor 586 590	user
+R10	IsActorOf Arg1:T20 Arg2:T19
+T21	Object 640 651	annotations
+T22	Action 669 674	allow
+T23	Actor 657 663	system
+R11	IsActorOf Arg1:T23 Arg2:T22
+T24	Action 687 691	view
+T25	Actor 679 683	user
+R12	IsActorOf Arg1:T25 Arg2:T24
+T26	Action 704 710	delete
+R14	IsActorOf Arg1:T25 Arg2:T26
+T27	Action 771 775	view
+T28	Object 791 802	annotations
+T29	Action 842 848	export
+T30	Actor 821 825	user
+R16	IsActorOf Arg1:T30 Arg2:T29
+T31	Object 38 45	project
+R17	ActsOn Arg1:T1 Arg2:T31	
+T32	Property 68 72	name
+R18	HasProperty Arg1:T31 Arg2:T32	
+T33	Property 89 101	requirements
+R19	HasProperty Arg1:T31 Arg2:T33	
+T34	Object 137 144	project
+T35	Property 162 174	requirements
+T36	Property 203 214	annotations
+R20	HasProperty Arg1:T34 Arg2:T35	
+R21	HasProperty Arg1:T34 Arg2:T36	
+R22	ActsOn Arg1:T3 Arg2:T34	
+T37	Object 330 337	project
+R23	ActsOn Arg1:T8 Arg2:T37	
+T38	Object 426 432	entity
+R24	ActsOn Arg1:T11 Arg2:T13	
+R25	ActsOn Arg1:T11 Arg2:T38	
+T39	Object 466 478	associations
+R26	ActsOn Arg1:T14 Arg2:T39	
+T40	Object 501 509	entities
+T41	Property 547 553	entity
+R27	ActsOn Arg1:T16 Arg2:T18	
+T42	Property 557 568	association
+R28	HasProperty Arg1:T18 Arg2:T41	
+R29	HasProperty Arg1:T18 Arg2:T42	
+T43	Property 618 624	entity
+T44	Property 628 639	association
+R30	HasProperty Arg1:T21 Arg2:T43	
+R31	HasProperty Arg1:T21 Arg2:T44	
+R32	ActsOn Arg1:T19 Arg2:T21	
+T45	Object 724 735	annotations
+R33	ActsOn Arg1:T24 Arg2:T45	
+R34	ActsOn Arg1:T26 Arg2:T45	
+T46	Action 693 699	modify
+R35	ActsOn Arg1:T46 Arg2:T45	
+R36	IsActorOf Arg1:T25 Arg2:T46	
+T47	Action 780 786	modify
+T48	Actor 741 754	administrator
+R37	IsActorOf Arg1:T48 Arg2:T27	
+R38	IsActorOf Arg1:T48 Arg2:T47	
+R39	ActsOn Arg1:T27 Arg2:T28	
+R40	ActsOn Arg1:T47 Arg2:T28	
+T49	Object 853 860	project
+T50	Object 903 914	annotations
+T51	Action 887 893	export
+R41	IsActorOf Arg1:T30 Arg2:T51	
+R42	ActsOn Arg1:T29 Arg2:T49	
+R43	ActsOn Arg1:T51 Arg2:T50	
+T52	Object 272 282	collection
+T53	Object 349 359	collection
+T54	Property 491 500	annotated
+R44	HasProperty Arg1:T40 Arg2:T54	
+T55	Object 872 882	collection

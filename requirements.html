@@ -1,0 +1,78 @@
+<html lang="en-US" xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Requirements of the S-Case Requirements Annotation Tool</title>
+  </head>
+  <body>
+    <div id="userrequirements" style="width: 850px; margin:0 auto; text-align:justify;">
+      <h2>Requirements of the S-CASE Requirements Annotation Tool</h2>
+        <p>Although a tool is not necessarily released along with its user requirements, the
+           S-CASE Requirements Annotation Tool is quite different. Since the tool is about annotating
+           requirements itself, we decided to publish the requirements as a potential example of using
+           the tool (recursion at its finest <big>&#9786;</big>).
+        </p>
+        <p>This document contains the user requirements for the tool, both functional and non-functional,
+           as well as a typical user scenario which is provided in order to help you understand the
+           functionality of the S-CASE Requirements Annotation Tool. 
+        </p>
+      <h3>User Requirements</h3>
+      <h4>Functional Requirements</h4>
+        <p>
+             The user must be able to create a new project by adding the project name and the project requirements.<br/>
+             The user must be able to import a project by importing its requirements and optionally any existing annotations.<br/>
+             The user must be able to create a new folder in his/her collection.<br/>
+             The user must be able to delete any folder or project in his/her collection.<br/>
+             The user must be able to annotate single or multiple terms as an entity.<br/>
+             The user must be able to create associations between the annotated entities.<br/>
+             The user must be able to delete any entity or association annotations.<br/>
+             The user must be able to modify any entity or association annotations.<br/>
+             The system must allow the user to view, modify and delete only his/her annotations.<br/>
+             The administrator must be able to view and modify all annotations of all users.<br/>
+             The user must be able to export any project in his/her collection and export also the annotations.<br/>
+        </p>
+      <h4>Non-Functional Requirements</h4>
+        <p>
+             The system must support importing and exporting the annotations in &quot;ann&quot; form.<br/>
+             The system must allow the administrator to export the annotations in &quot;owl&quot; and &quot;ttl&quot; forms as well.<br/>
+             The automatic annotation component must annotate any requirement within less than a second.<br/>
+             The system should warn the user whenever a delete operation is performed on annotations or projects.<br/>
+             The user interface of the tool must be intuitive and user-friendly.<br/>
+             The user interface must not allow the user to input non-valid annotations.<br/>
+        </p>
+      <h3>User Scenario</h3>
+        <p>
+           John is the Head of an R&amp;D team working on Automated Software Engineering. Lately, the team has
+           been working on the development of search engine for Software projects, and John realized that, in
+           order to perform basic tests, he is going to need annotated user requirements from past projects.
+           That's OK -he thinks- since his group has developed a number of projects following a standard software
+           engineering (SE) process, thus writing down user requirements. However, these requirements are not
+           annotated, so he assigns the annotation task to Bill. 
+        </p>
+        <p>
+           Bill is a keen junior researcher who has used SE tools in the past and has heard of the S-CASE Requirements
+           Annotation Tool. He follows the related URL, registers and is presented with a simple interface where he
+           can import and annotate the software projects. Foe each project, he creates a .txt file with the set of
+           functional requirements and uploads them to the tool. After inserting the requirements, Bill has to start
+           annotating them. The tool provides Bill with functionality like double-clicking on terms to set an annotation
+           and dragging entities to form associations, which is very intuitive. However, annotating all the requirements
+           for all the project will take Bill a lot of time. He wished the annotation task could be done semi-automatically.
+           Then, he notices the auto-annotation feature of the S-CASE Requirements Annotation Tool. A coarse annotation is
+           performed by the system and Bill reviews and edits what needs to be corrected. More than half of the annotations
+           that he wants to perform are already created. After minor corrections, he is able to annotate a whole project in
+           a few minutes! 
+        </p>
+        <p>
+           Furthermore, since the tool supports different user accounts, he gives the address also to his partners, Bob and
+           Mary, and asks them whether they could help with annotating the projects. Bob and Mary agree to help. Bill, being
+           the administrator of the group, is able to download the annotations of all projects in .ann, .owl and .ttl format.
+           He gives them to John who is pleasantly surprised by the quality of the annotations and can use them as a base to
+           start building tests. 
+        </p>
+      <h3>Annotated Requirements of the S-Case Requirements Annotation Tool using the tool itself</h3>
+      <img src="static/img/manual/sameannotation.png" alt="sameannotation" title="Requirements of the Requirements Annotation Tool" style="display: block; margin-left: auto; margin-right: auto;"/>
+      <div style="font-size: 10px; color: gray; border-top: 1px solid lightgray; margin-top: 5em; margin-bottom: 5em; clear: both;">
+        <p style="float: left;">S-Case Requirements Annotation Tool</p>
+        <p style="float: right;">&copy; 2014 Aristotle University Of Thessaloniki</p>
+      </div>
+    </div>
+  </body>
+</html>

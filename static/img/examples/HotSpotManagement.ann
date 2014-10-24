@@ -1,0 +1,57 @@
+T1	Actor 0 5	Users
+T3	Action 66 72	inform
+T4	Actor 53 59	system
+R1	IsActorOf Arg1:T4 Arg2:T3
+T5	Action 91 97	enters
+T7	Actor 86 90	user
+R3	IsActorOf Arg1:T7 Arg2:T5
+R4	IsActorOf Arg1:T4 Arg2:T5
+T8	Action 151 157	accept
+T9	Actor 127 133	system
+R5	IsActorOf Arg1:T9 Arg2:T8
+T10	Object 162 170	Hotspots
+T11	Actor 200 213	Administrator
+T12	Action 232 238	access
+T13	Object 251 259	accounts
+T14	Action 272 279	fulfill
+T15	Actor 301 306	users
+T16	Action 325 331	create
+T17	Action 370 376	delete
+T18	Action 410 417	provide
+T19	Actor 397 403	system
+R6	IsActorOf Arg1:T19 Arg2:T18
+T20	Action 523 529	change
+T21	Object 534 541	account
+R7	ActsOn Arg1:T20 Arg2:T21
+T22	Actor 500 504	user
+R8	IsActorOf Arg1:T22 Arg2:T20
+T23	Object 41 47	system
+T2	Action 28 36	log into
+R9	IsActorOf Arg1:T1 Arg2:T2	
+R10	ActsOn Arg1:T2 Arg2:T23	
+T6	Object 73 77	user
+R2	ActsOn Arg1:T3 Arg2:T6	
+T24	Object 104 108	data
+T25	Property 98 103	wrong
+R11	HasProperty Arg1:T24 Arg2:T25	
+R12	ActsOn Arg1:T5 Arg2:T24	
+R13	ActsOn Arg1:T8 Arg2:T10	
+R14	IsActorOf Arg1:T11 Arg2:T12	
+R15	ActsOn Arg1:T12 Arg2:T13	
+T26	Object 286 291	tasks
+R16	IsActorOf Arg1:T11 Arg2:T14	
+R17	ActsOn Arg1:T14 Arg2:T26	
+T27	Object 332 340	accounts
+R18	IsActorOf Arg1:T15 Arg2:T16	
+R19	ActsOn Arg1:T16 Arg2:T27	
+T28	Actor 346 351	users
+T29	Object 383 391	accounts
+R20	IsActorOf Arg1:T28 Arg2:T17	
+R21	ActsOn Arg1:T17 Arg2:T29	
+T30	Object 436 444	features
+R22	ActsOn Arg1:T18 Arg2:T30	
+T31	Actor 478 482	user
+T33	Property 460 467	hotspot
+R24	HasProperty Arg1:T31 Arg2:T33	
+T32	Property 542 553	information
+R23	HasProperty Arg1:T21 Arg2:T32	

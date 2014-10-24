@@ -1,0 +1,124 @@
+<html lang="en-US" xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>User Manual of the S-Case Requirements Annotation Tool</title>
+  </head>
+  <body>
+    <div id="usermanual" style="width: 850px; margin:0 auto; text-align:justify;">
+      <h2>Welcome to the S-CASE Requirements Annotation Tool!</h2>
+        <!--p align="right" style="font-size:80%;"><i>This tool is largely based on the brat annotation tool, 
+          available <a href="http://brat.nlplab.org/">here</a>.</i>
+        </p>-->
+        <p>Supported browsers are Firefox, Chrome, Safari, and Internet
+          Explorer. Firefox, however, is highly recommended.
+        </p>
+      <h3>Main Menu</h3>
+      <img src="static/img/manual/first_screen.png" alt="first screen" title="Main Menu" style="display: block; margin-left: auto; margin-right: auto;"/>
+        <p>The menu of the application is placed on top of the window. The buttons of
+          the menu are:
+          <ul>
+            <li><b>Register:</b> Register for creating an account</li>
+            <li><b>Login:</b> Log in for accessing and/or editing the collection</li>
+            <li><b>Collection:</b> Opens the collection browser (to create, edit
+            and delete the files of the user)</li>
+            <li><b>Export:</b> Contains controls for exporting the text files and the
+            annotations</li>
+            <li><b>Auto-Annotate:</b> Executes an automatic annotator on the existing
+            document</li>
+            <li><b>Help:</b> Opens a help window</li>
+          </ul>
+        </p>
+      <h3>User Accounts</h3>
+        <p>Every user of the system has his/her own collection of documents.
+          The system has no multi-user support in the sense that no more than
+          one user can edit a document. In fact, each user can only create and
+          edit/annotate documents in his/her own collection. Upon registering,
+          the system creates a collection for the user, which can be accessed
+          if he/she is logged in to the system.
+        </p>
+        <div style="text-align:center">
+        <img src="static/img/manual/register.png" alt="register" title="Register Form" style="padding-right: 10px;"/>
+        <img src="static/img/manual/login.png" alt="login" title="Login Form"/>
+        </div>
+        <h4>Registering</h4>
+        <p>Registering for an account is easy. Simply push the register button and fill
+          in the form with your desired username and password. If the username exists,
+          the system will prompt you to select a different one.
+        </p>
+        <h4>Logging in</h4>
+        <p>If you have a username and a password, you can login to the system by entering
+          them in the login form.
+        </p>
+      <h3>Collections and Documents</h3>
+        <p>The collection of the user is actually the uppermost folder that
+          he/she can access. The &quot;Collection&quot; button on the left of the menu is
+          used to open the collection at any time. In this folder, the user can
+          create documents and folders using the respective buttons or access
+          them by double-clicking on them. Additionally, the user can delete a
+          folder or a document using the respective buttons.
+        </p>
+        <img src="static/img/manual/collection.png" alt="collection" title="Collection" style="display: block; margin-left: auto; margin-right: auto;"/>
+        <p>The user can insert a new project by pressing the &quot;Create new project&quot;
+          and inputting the project name and the requirements in the dedicated text fields.
+          Furthermore, he/she can import a project with or without annotations upon pressing
+          the  &quot;Import a project&quot; button. The &quot;Document&quot; field is required
+          but the &quot;Annotations&quot; field is optional.
+        </p>
+        <div style="text-align:center">
+        <img src="static/img/manual/create_project.png" alt="create_project" title="Create Project Form" style="padding-right: 10px;"/>
+        <img src="static/img/manual/import_project.png" alt="import_project" title="Import Project Form" style="padding-bottom: 50px;"/>
+        </div>
+      <h3>Document Annotation</h3>
+        <p>Upon having created (or imported) a document, double-clicking on it opens it in
+          the main visualization area. Then the user can place different annotations on the
+          document. In specific, the tool supports the following types of annotations:
+          <ul>
+            <li><b>Entities:</b> Declare the type of each term (or consecutive
+            terms). They are added by selecting the term(s) or double-clicking
+            on a term.</li>
+            <li><b>Associations:</b> Declare the relations between different
+            entities. They are added by &quot;dragging&quot; the annotation
+            of an entity on another annotation.</li>
+          </ul>
+          Existing annotations can be modified or deleted by double-clicking
+          on them. Note that the associations can only be added after the entities.
+          Furthermore, only supported associations can be added.
+        </p>
+        <h4>Automatic Annotation</h4>
+        <p>
+          When the user has opened a project in the main area, he/she can perform automatic
+          annotation on the project. <b>Note that automatic annotation should be used only
+          as a helpful complement. No guarantee is provided as to the quality of the
+          annotations. As a result, the user has to review the annotations and add any missing
+          ones.</b>
+        </p>
+        <img src="static/img/manual/annotated.png" alt="annotated" title="Auto-Annotation example (and reviewing the annotations)" style="display: block; margin-left: auto; margin-right: auto;"/>
+        <h4>Exporting Annotated projects</h4>
+        <p>
+          As mentioned above, the user should refine the annotations provided by the automatic
+          annotator. After that, there is no need to save any of the annotations. The system
+          automatically saves any annotation the users perform, thus it is perfectly safe.
+        </p>
+        <img src="static/img/manual/annotatedfinal.png" alt="annotatedfinal" title="Finished Annotation example" style="display: block; margin-left: auto; margin-right: auto;"/>
+        <p>
+          Exporting an annotated project is done by pressing the &quot;Export&quot; button. Then the
+          user is presented with two options relevant to exporting the txt and the ann of the project.
+          The &quot;txt&quot; option simply exports the requirements of the project in text form. The &quot;txt&quot;
+          option exports an ann file containing the annotations of the project.
+        </p>
+        <img src="static/img/manual/export_project.png" alt="export_project" title="Exporting Project Annotations" style="display: block; margin-left: auto; margin-right: auto;"/>
+        <p>
+          Although your projects are perfectly safe on the server, it is recommended to also export them in
+          txt and ann form in order to have a local copy of them. Importing a project is done as explained above
+          using the import form. Note that you have to import both the txt and the ann file at the same time. In
+          addition, during import, there should be no conflicts with other projects so you should use a project name
+          that does not already exist in your collection.
+        </p>
+      <h3>Usage Examples</h3>
+        <p>You can find some examples <a href="examples.html">here</a> and you can also see the tool's requirements <a href="requirements.html">here</a>.</p>
+      <div style="font-size: 10px; color: gray; border-top: 1px solid lightgray; margin-top: 5em; margin-bottom: 5em; clear: both;">
+        <p style="float: left;">S-Case Requirements Annotation Tool</p>
+        <p style="float: right;">&copy; 2014 Aristotle University Of Thessaloniki</p>
+      </div>
+    </div>
+  </body>
+</html>

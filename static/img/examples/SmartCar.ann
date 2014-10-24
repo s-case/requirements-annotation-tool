@@ -1,0 +1,135 @@
+T1	Action 25 30	start
+T2	Actor 4 8	user
+R1	IsActorOf Arg1:T2 Arg2:T1
+T4	Action 128 136	validate
+T5	Actor 116 122	system
+R2	IsActorOf Arg1:T5 Arg2:T4
+T6	Action 163 170	request
+T7	Actor 151 157	system
+R3	IsActorOf Arg1:T7 Arg2:T6
+T8	Action 231 238	perform
+T9	Actor 219 225	system
+R4	IsActorOf Arg1:T9 Arg2:T8
+T10	Action 284 290	locate
+T11	Actor 272 278	system
+R5	IsActorOf Arg1:T11 Arg2:T10
+T13	Action 342 349	project
+T14	Actor 330 336	system
+R6	IsActorOf Arg1:T14 Arg2:T13
+T15	Property 354 362	position
+T16	Action 415 420	input
+T17	Actor 394 398	user
+R7	IsActorOf Arg1:T17 Arg2:T16
+T18	Action 462 471	calculate
+T19	Actor 450 456	system
+R8	IsActorOf Arg1:T19 Arg2:T18
+T20	Object 485 491	routes
+T21	Action 528 534	inform
+T22	Actor 516 522	system
+R9	IsActorOf Arg1:T22 Arg2:T21
+T23	Action 581 587	select
+T24	Actor 569 575	system
+R10	IsActorOf Arg1:T24 Arg2:T23
+T25	Object 601 606	route
+T26	Action 633 640	control
+T27	Actor 612 616	user
+R11	IsActorOf Arg1:T27 Arg2:T26
+T28	Action 689 697	identify
+T29	Actor 677 683	system
+R12	IsActorOf Arg1:T29 Arg2:T28
+T30	Action 729 736	compare
+T31	Actor 717 723	system
+R13	IsActorOf Arg1:T31 Arg2:T30
+T32	Action 809 813	read
+T33	Actor 786 792	system
+R14	IsActorOf Arg1:T33 Arg2:T32
+T34	Action 865 871	inform
+T35	Actor 853 859	system
+R15	IsActorOf Arg1:T35 Arg2:T34
+T36	Action 943 947	read
+T37	Actor 920 926	system
+R16	IsActorOf Arg1:T37 Arg2:T36
+T38	Action 989 992	get
+T39	Actor 966 972	system
+R17	IsActorOf Arg1:T39 Arg2:T38
+T40	Property 998 1003	pulse
+T41	Actor 993 997	user
+T42	Action 1037 1041	call
+T43	Actor 1025 1031	system
+R20	IsActorOf Arg1:T43 Arg2:T42
+T44	Action 1050 1054	stop
+R21	IsActorOf Arg1:T43 Arg2:T44
+T46	Action 1133 1137	read
+T47	Actor 1110 1116	system
+R22	IsActorOf Arg1:T47 Arg2:T46
+T48	Actor 73 77	user
+T49	Action 83 88	login
+T50	Actor 94 98	user
+T51	Action 104 110	logout
+R23	IsActorOf Arg1:T48 Arg2:T49	
+R24	IsActorOf Arg1:T50 Arg2:T51	
+T52	Object 141 145	user
+R25	ActsOn Arg1:T4 Arg2:T52	
+T57	Object 370 377	vehicle
+R30	HasProperty Arg1:T57 Arg2:T15	
+T58	Object 433 444	destination
+R32	ActsOn Arg1:T16 Arg2:T58	
+R33	ActsOn Arg1:T18 Arg2:T20	
+T59	Object 539 543	user
+R34	ActsOn Arg1:T21 Arg2:T59	
+T60	Object 645 651	system
+R36	ActsOn Arg1:T26 Arg2:T60	
+T61	Object 698 711	parking spots
+R37	ActsOn Arg1:T28 Arg2:T61	
+T62	Object 741 760	size of the vehicle
+T63	Object 768 780	parking spot
+R38	ActsOn Arg1:T30 Arg2:T62	
+R39	ActsOn Arg1:T30 Arg2:T63	
+T53	Object 171 187	fingerprint scan
+T54	Object 242 254	alcohol test
+R26	ActsOn Arg1:T6 Arg2:T53	
+R27	ActsOn Arg1:T8 Arg2:T54	
+T55	Object 192 207	user validation
+T56	Action 208 213	fails
+R29	ActsOn Arg1:T56 Arg2:T55	
+T64	Object 35 41	system
+R40	ActsOn Arg1:T1 Arg2:T64	
+T3	Object 58 67	ON button
+T65	Action 45 53	pressing
+R41	ActsOn Arg1:T65 Arg2:T3	
+R42	IsActorOf Arg1:T2 Arg2:T65	
+T66	Object 814 828	license plates
+R43	ActsOn Arg1:T32 Arg2:T66	
+T67	Object 876 880	user
+R44	ActsOn Arg1:T34 Arg2:T67	
+T68	Actor 889 893	user
+T69	Action 894 901	exceeds
+T70	Object 902 914	speed limits
+R45	IsActorOf Arg1:T68 Arg2:T69	
+R46	ActsOn Arg1:T69 Arg2:T70	
+T71	Object 948 960	speed limits
+R47	ActsOn Arg1:T36 Arg2:T71	
+R18	HasProperty Arg1:T41 Arg2:T40	
+T12	Object 295 302	vehicle
+T72	Property 303 311	position
+R19	HasProperty Arg1:T12 Arg2:T72	
+R28	ActsOn Arg1:T10 Arg2:T72	
+R31	ActsOn Arg1:T13 Arg2:T15	
+R35	ActsOn Arg1:T23 Arg2:T25	
+T73	Property 592 600	shortest
+R48	HasProperty Arg1:T25 Arg2:T73	
+T74	Object 660 671	voice calls
+T75	Object 841 847	camera
+T76	Object 1012 1019	sensors
+R49	ActsOn Arg1:T38 Arg2:T40	
+T77	Object 1059 1066	vehicle
+T78	Property 1076 1081	pulse
+T79	Actor 1071 1075	user
+R50	HasProperty Arg1:T79 Arg2:T78	
+R52	ActsOn Arg1:T44 Arg2:T77	
+T81	Object 1138 1151	traffic signs
+R53	ActsOn Arg1:T46 Arg2:T81	
+T82	Object 1042 1045	911
+R54	ActsOn Arg1:T42 Arg2:T82	
+T45	Property 1082 1103	exceeds normal limits
+R51	HasProperty Arg1:T78 Arg2:T45	

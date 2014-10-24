@@ -1,0 +1,11 @@
+The user must be able to create a new project by adding the project name and the project requirements.
+The user must be able to import a project by importing its requirements and optionally any existing annotations.
+The user must be able to create a new folder in his/her collection.
+The user must be able to delete any folder or project in his/her collection.
+The user must be able to annotate single or multiple terms as an entity.
+The user must be able to create associations between the annotated entities.
+The user must be able to delete any entity or association annotations.
+The user must be able to modify any entity or association annotations.
+The system must allow the user to view, modify and delete only his/her annotations.
+The administrator must be able to view and modify all annotations of all users.
+The user must be able to export any project in his/her collection and export also the annotations.
