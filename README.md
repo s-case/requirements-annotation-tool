@@ -16,6 +16,7 @@ The steps for installing scase_rat are:
 * Navigate to /var/www/html/scase_rat
 * Execute install.sh
 * Enable cgi in apache (sudo a2enmod cgi)
+* Make sure that the cgi files are executable (issue the command sudo chmod +x *.cgi)
 * Navigate to localhost/scase_rat, login as 'admin' (password: 'pass') and change your password
 
 ## License ##
