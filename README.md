@@ -12,6 +12,7 @@ This tool is largely based on the [brat annotation tool][brat]
 The steps for installing scase_rat are:
 * Download the repo contents and place them in a folder named scase_rat
 * Install apache2 (sudo apt-get install apache2)
+* Install python 2.7 and set it as default (sudo add-apt-repository ppa:fkrull/deadsnakes, sudo apt-get update, sudo apt-get install python2.7, sudo ln -s /usr/bin/python2.7 /usr/bin/python)
 * Move the scase_rat folder in the folder of apache (/var/www/html/)
 * Navigate to /var/www/html/scase_rat
 * Execute install.sh
