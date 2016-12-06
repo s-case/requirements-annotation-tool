@@ -17,6 +17,7 @@ The steps for installing scase_rat are:
 * Navigate to /var/www/html/scase_rat
 * Execute install.sh
 * Enable cgi in apache (sudo a2enmod cgi)
+* If the previous step results in the message "Your MPM seems to be threaded. Selecting cgid instead of cgi.", then issue the commands sudo a2dismod mpm_event, sudo a2enmod mpm_prefork, sudo service apache2 restart, sudo a2enmod cgi, sudo service apache2 restart
 * Make sure that the cgi files are executable (issue the command sudo chmod +x *.cgi)
 * Navigate to localhost/scase_rat, login as 'admin' (password: 'pass') and change your password
 
