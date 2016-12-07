@@ -11,34 +11,34 @@
 #
 # (See also http://brat.nlplab.org/troubleshooting.html)
 
+# For older apache versions change
+#     Require all denied
+# to
+#     Order allow,deny
+#     Deny from all
+
 <FilesMatch "^(\.htaccess|config\.py|)$">
-    Order allow,deny
-    Deny from all
+    Require all denied
 </FilesMatch>
 
 <FilesMatch "^(visual\.conf|tools\.conf|annotation\.conf|attributes\.conf|event_types\.conf|lighttpd\.conf|lighttpd_fcgi\.conf|kb_shortcuts\.conf)$">
-    Order allow,deny
-    Deny from all
+    Require all denied
 </FilesMatch>
 
 <FilesMatch "^(register\.html|process_form\.cgi|diff\.xhtml|offline\.xhtml)$">
-    Order allow,deny
-    Deny from all
+    Require all denied
 </FilesMatch>
 
 <FilesMatch "^(executeserver\.py|standalone\.py|static\ config\.py|config_template\.py|terminateserver\.py|testserver\.py|oconfig\.py)$">
-    Order allow,deny
-    Deny from all
+    Require all denied
 </FilesMatch>
 
 <FilesMatch "^(README\.md|LICENSE\.md|CONTRIBUTING\.md|CONTRIBUTORS\.md|users\.txt|users)$">
-    Order allow,deny
-    Deny from all
+    Require all denied
 </FilesMatch>
 
 <FilesMatch "^(install\.sh)$">
-    Order allow,deny
-    Deny from all
+    Require all denied
 </FilesMatch>
 
 Options +ExecCGI +FollowSymLinks
