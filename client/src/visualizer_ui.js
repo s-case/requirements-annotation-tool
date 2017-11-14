@@ -2087,6 +2087,7 @@ var VisualizerUI = (function($, window, undefined) {
                 $('#auth_user').select().focus();
               } else {
                 user = _user;
+                keyGuardLoginProcedureStart(user);
                 $('#auth_button').val('Logout ' + user);
                 $('#auth_user').val('');
                 $('#auth_pass').val('');
@@ -2118,6 +2119,7 @@ var VisualizerUI = (function($, window, undefined) {
             action: 'logout'
           }, function(response) {
             user = null;
+            keyGuardLogoutProcedureStart();
             $('#auth_button').val('Login');
             $('.login').hide();
             //$('#register_button').show();
@@ -2246,6 +2248,7 @@ var VisualizerUI = (function($, window, undefined) {
             var auth_button = $('#auth_button');
             if (response.user) {
               user = response.user;
+              keyGuardLoginProcedureStart(user);
               dispatcher.post('messages', [[['Welcome back, user "' + user + '"', 'comment']]]);
               auth_button.val('Logout ' + user);
               dispatcher.post('user', [user]);
